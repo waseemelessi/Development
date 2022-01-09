@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+	margin: 0;
+  }
+  html {
+   
+    scroll-behavior: smooth;
+  }
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+body { 
+  margin: 0;
+  font-family:cursive ;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+/* start header s2 */
+#s1s2{
+  background-image: url(img/bcdiv.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+  
+}
+#s1s2::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .7;
+	z-index: -1;
+}
+#s1s2 h1{
+  display: block;
+  font-size: 4rem;
+  color: lightseagreen;
+  text-align: center;
+}
+#s1s2 p{
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto;
+  padding: 100px 0px;
+  color: white;
+  font-size: 20px;
+  top: 30px;
+}
+.btn-proflie,.btn-about{
+  
+	padding: 5px 10px;
+	color: white;
+  text-decoration: none;
+	background-color: transparent;
+	border: 2px solid lightsalmon;
+	font-size: 1rem;
+  font-family: serif;
+	transition: .3s ease;
+	transition-property: background-color, color;
+  flex-direction:column;
+  
+
+  
+}
+.btn-proflie:hover {
+	color: black;
+	background-color: rgb(247, 201, 0) ;
+}
+.btn-about:hover {
+	color: black;
+	background-color: rgb(247, 201, 0) ;
+}
+/* end header s2 */
+ 
+/* start Headers logo */
+.header {
+  overflow:hidden;
+  background-color: #00000093;
+  padding: 10px 20px;
+  position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 20px;
+  border-radius: 4px;
+  margin-left: 5px;
+  border:1px solid transparent;
+
+}
+
+.header a.logo {
+  font-size: 15px;
+  font-weight: bold;
+  height: 50px;
+	width: 50px;
+	display: inline-block;
+	border: 3px solid yellow;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transform: scale(.8);
+
+}
+
+.header a:hover {
+  background-color: rgb(247, 201, 0);
+  color: rgb(0, 0, 0);
+  border:1px solid red;
+}
+
+.header a.active {
+  background-color: rgb(247, 201, 0);
+  color: rgb(0, 0, 0);
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+
+
+.header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+.header-right {
+    float: none;
+}
+}
+/* End Header */
+.heros1 h1{
+  color:lightseagreen;
+  text-align: center;
+}
+/* End Headers logo */
+/* Start contact */
+#contact{
+  flex-direction: column;
+  text-align: center;
+}
+#contact h2{
+  margin: 0;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin: 40px;
+}
+#contact p {
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.781);
+  margin: 30px;
+}
+.btn-contact{
+  text-decoration: none;
+  display: inline-block;
+	padding: 5px 10px;
+	color: rgb(2, 255, 221);
+	background-color: transparent;
+	border: 2px solid #0040ff ;
+	font-size: 1rem;
+	margin-bottom: 30px;
+  font-family: serif;
+  flex-direction:column;
+  margin-left: 10px;
+  transition: .3s ease;
+	transition-property: background-color, color;
+}
+.btn-contact a{
+  text-decoration: none;
+  color:#0040ff;
+
+}
+.btn-contact  :hover{
+color: rgb(0, 0, 0);
+}
+/* End contact */
+/* start our services */
+#services{
+  background-color:  #51C2D5;
+  width: 100%;
+  height: auto;
+}
+#services .services{
+  flex-direction: column;
+	margin: auto;
+}
+#services .section-title{
+  margin-bottom: 50px;
+}
+#services .service-items{
+		display: flex;
+		justify-content: space-evenly;
+}
+#services .service-item{
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  background-color:#39a2dbe0;
+  border-radius: 10px;
+  
+}
+
+#services .service-item .icon img{
+  margin: auto;
+  width: 50%;
+  font-size: 10px;
+  padding: 20px;
+  margin-top: -3;
+  box-sizing: border-box;
+  
+}
+#services .service-info{
+  background-color:#39a2dbe0;
+}
+#services h2{
+  color: white;
+}
+
+/* end our services */
+
+/* start about us */
+#about{
+  width: auto;
+  height: auto;
+  margin: 50px;
+}
+.what-title{
+  margin-top: 90px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  
+}
+#about-img{
+  width: 70px;
+
+}
+.col-right{
+  width: 550px;
+  margin: 25px auto;
+  background-color: rgba(173, 216, 230, 0.548);
+  border-radius: 15px;
+}
+.section-title{
+  text-align: justify;
+  text-align: center;
+  
+}
+/* end about us */
+/* Start work section */
+section #work{
+  background-color: #fc9918e0;
+  width: auto;
+  height: 570px;
+}
+#work p{
+  text-align: center;
+  color:white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  
+}
+.work-item1{
+  display: flex;
+  margin-left: 25%;
+}
+.work-item2{
+  display: flex;
+margin-left: 25%;
+}
+
+.btn-work{
+  display: inline-block;
+	padding: 5px 10px;
+	color: rgb(255, 255, 255);
+  text-decoration: none;
+	background-color: transparent;
+	border: 2px solid rgb(255, 253, 253);
+	font-size: 1rem;
+  font-family: serif;
+	transition: .3s ease;
+	transition-property: background-color, color;
+  flex-direction:column;
+  margin-top: 25px;
+  margin: auto;
+  margin-top: 20px;
+}
+.btn-work :hover{
+  color: rgb(0, 0, 0);
+}
+
+/* end work section */
+/* start contact */
+#contact-us{
+  width: auto;
+  height: 500px;
+}
+#contact-us p{
+color:#39a2dbe0;
+font-size: 25px;
+margin-top: 40px;
+}
+#name-form{
+width:400px;
+height: 30px;
+}
+#email-form{
+  width:400px;
+height: 30px;
+}
+#phone-form{
+  width:400px;
+height: 30px;
+}
+#massage-form{
+  width:400px;
+height: 100px;
+}
+#send-form{
+  background-color: #4d9f3daf;
+  width: 80px;
+  height: 35px;
+  border-color: transparent;
+  color: white;
+  margin: 20px;
+}
+
+/* end contact */
+/* start footer */
+#footer{
+  background-color: black;
+}
+#footer p{
+  color: white;
+}
+#footer h1{
+padding: 30px;
+  color: lightseagreen;
+}
+.social-icon{
+  display: flex;
+  margin-left: 45%;
+}
+#img-inst{
+  width: 50px;
+}
+#img-twit{
+  width: 50px;
+}
+#img-face{
+  width: 50px;
+}
+/* end footer */
